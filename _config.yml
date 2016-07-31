@@ -1,0 +1,4 @@
+name: David Watkins for State Representative
+markdown: kramdown
+highlighter: rouge # or rouge or null
+exclude: ["node_modules", "gulpfile.js", "package.json"]

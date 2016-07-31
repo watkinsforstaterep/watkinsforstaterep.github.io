@@ -1,0 +1,53 @@
+.signup-input
+
+  input[type=submit]
+    color: #fff
+    font-weight: 700
+    font-size: 20px
+    background-color: $secondary-blue
+    border: none
+    transition: background-color .15s
+
+    &:hover
+      background-color: darken($secondary-blue, 10%)
+      color: #fff
+
+
+  +media($tablet)
+    width: 100%
+    text-align: center
+
+  input
+    height: 50px
+    width: 100%
+    border: 1px solid $primary-blue
+    border-bottom: 0
+    padding-left: 5px
+    font-size: 16px
+    font-weight: 700
+
+.home-signup-split
+  display: table
+  width: 100%
+
+  input:first-child
+    +media($screen)
+      border-right: none
+
+  input
+    display: table-cell
+    width: 50%
+    padding: 5px 0
+    padding-left: 5px
+
+  +media($tablet)
+    display: block
+    padding: 0
+    input
+      width: 100%
+
+  +media($mobile)
+    display: block
+    padding: 0
+    input
+      width: 100%

@@ -1,0 +1,42 @@
+.hero-image.bio-image
+  +background-image(linear-gradient(rgba($secondary-blue, 0.65), rgba($secondary-blue, 0.65)), url(/assets/img/keenewatkins2.jpg))
+  background-position: top
+
+#bio-text
+  +outer-container(90%)
+  +media($screen)
+    +outer-container(45%)
+    padding: 20px 0
+    font-size: 1.3em
+
+.hero-image.issues-image
+  +background-image(linear-gradient(rgba($secondary-blue, 0.65), rgba($secondary-blue, 0.65)), url(/assets/img/watkinsmilesridley.jpg))
+  background-position: center
+
+  +media($screen)
+    padding: 6em 0
+
+#issues-container
+  +outer-container(90%)
+  +media($screen)
+    padding: 20px 0 40px 0
+    font-size: 1.2em
+
+.issue-area
+  +span-columns(4)
+  +media($tablet)
+    +span-columns(4)
+  +media($mobile)
+    +span-columns(4)
+
+.issue-card-header
+  color: $primary-blue
+  font-size: 2.25em
+  text-decoration: underline
+  font-weight: 700
+
+  .fa-check
+    color: $donate-red
+
+.issue-card
+  padding-bottom: 5px

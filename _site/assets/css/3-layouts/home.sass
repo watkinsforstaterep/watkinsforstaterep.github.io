@@ -1,0 +1,168 @@
+.hero-image
+  background-repeat: no-repeat
+  background-size: cover
+  min-height: 30em
+  padding: 3em 0
+
+  +media($screen)
+    padding: 6em 0
+    background-position: top
+
+  +media($mobile)
+    min-height: 20em
+
+.hero-text
+  font-size: 5em
+  font-weight: bold
+  color: white
+  text-shadow: 1px 1px 2px rgba(0,0,0, 0.2)
+  +outer-container(90%)
+
+  +media($mobile)
+    font-size: 50px
+
+.hero-image.home-image
+  +background-image(linear-gradient(rgba($secondary-blue, 0.5), rgba($secondary-blue, 0.5)), url(/assets/img/HendersonDems2.jpg))
+  background-position: 70% 0%
+
+  .hero-text.home-hero-text
+    font-size: 5em
+
+.content-container
+  +outer-container
+
+  +media($tablet)
+    padding: 8em 10px 0 10px
+
+  +media($mobile)
+    padding: 8em 10px 0 10px
+
+  +media($screen)
+    +outer-container(90%)
+    padding-top: 8em
+
+
+.page-title
+  +media($tablet)
+    padding: 0 10px
+
+#home
+  padding: 20px 0
+  +outer-container(90%)
+
+.home-text
+  font-size: 16px
+
+  +media($mobile)
+    font-size: 14px
+
+.home-text, .home-cta
+  +span-columns(6)
+  +media($mobile)
+    +span-columns(4)
+  +media($tablet)
+    +span-columns(4)
+
+.home-cta-left, .home-cta-right
+  a:hover
+    color: white
+    transition: background-color .15s
+
+.home-cta-button
+  padding: 5px
+  font-size: 16px
+  text-transform: uppercase
+  font-weight: 700
+
+.home-cta-button, .home-fb, .home-tw
+  margin-top: 20px
+  height: 35px
+  text-align: center
+  color: white
+  +media($screen)
+    +span-columns(3 of 6)
+  +media($tablet)
+    +span-columns(4 of 4)
+  +media($mobile)
+    +span-columns(4 of 4)
+
+
+.volunteer
+  background-color: $primary-blue
+  &:hover
+    background-color: darken($primary-blue, 10%)
+
+.donate
+  background-color: $donate-red
+  &:hover
+    background-color: darken($donate-red, 10%)
+
+.home-fb, .home-tw
+  font-size: 20px
+
+.home-fb
+  background-color: $facebook-blue
+  &:hover
+    background-color: darken($facebook-blue, 10%)
+
+.home-tw
+  background-color: $twitter-blue
+  &:hover
+    background-color: darken($twitter-blue, 10%)
+
+.body-column
+	padding: 20px 10px
+
+#posts-column
+  +span-columns(4)
+
+  ul>li
+    list-style: none
+
+    h3
+      margin: 0
+
+  +media($mobile)
+    +span-columns(4)
+    padding: 10px 15px
+
+  +media($tablet)
+    +span-columns(8)
+    padding: 10px 15px
+
+.posts
+  padding: 0
+
+#read-more
+  border: 2px solid $donate-red
+  color: $donate-red
+  background-color: #fff
+  font-size: 16px
+  padding: 10px 15px
+  transition: background-color .15s, color .15s
+
+  &:hover
+    background-color: $donate-red
+    color: #fff
+
+.social-container
+  +media($screen)
+    +span-columns(8)
+  +media($tablet)
+    +span-columns(8)
+    width: 100%
+    padding-top: 20px
+
+#facebook, #twitter
+  text-align: center
+  +media($screen)
+    +span-columns(4 of 8)
+
+  +media($tablet)
+    +span-columns(4 of 8)
+
+  +media($mobile)
+    +span-columns(4)
+    text-align: center
+		padding: 10px 15px
+    width: 100%

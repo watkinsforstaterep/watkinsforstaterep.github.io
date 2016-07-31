@@ -1,0 +1,69 @@
+.hero-image.volunteer-image
+  +background-image(linear-gradient(rgba($secondary-blue, 0.65), rgba($secondary-blue, 0.65)), url(/assets/img/meeting.jpg))
+  background-position: center
+
+.volunteer-container
+  +outer-container(90%)
+  +media($screen)
+    +outer-container
+
+.volunteer-form-body
+  margin-top: 20px
+
+  h2
+    +span-columns(6)
+    +media($screen)
+      +shift(3)
+
+#title-info
+  font-size: 18px
+
+.contact-form
+  font-size: 20px
+  padding-bottom: 20px
+  +span-columns(6)
+
+  +media($screen)
+    +shift(3)
+
+  +media($tablet)
+    +span-columns(8)
+
+  +media($mobile)
+    +span-columns(4)
+
+.form-input
+  padding-bottom: 10px
+
+  textarea
+    height: 200px
+
+  input:not([type=checkbox]), textarea
+    width: 100%
+
+  ul
+    list-style: none
+
+  ul li label
+    padding-left: 10px
+
+.required-asterisk
+  color: $donate-red
+
+.form-paran
+  font-size: 15px
+  color: gray
+
+.form-checkbox
+  padding-left: 20px
+
+.form-submit
+  background-color: $donate-red
+  color: white
+  transition: background-color .15s
+  border: none
+  padding: 5px 10px
+  font-weight: 700
+
+  &:hover
+    background-color: darken($donate-red, 10%)
