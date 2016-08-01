@@ -1,4 +1,4 @@
-Cyndi Skellie For State Representative
+David Watkins For State Representative
 =============================
 
 Code for Campaign Website
