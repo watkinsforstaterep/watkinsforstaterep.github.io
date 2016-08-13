@@ -964,8 +964,8 @@ footer {
         display: table; } }
 
 .hero-image.issues-image {
-  background-image: -webkit-linear-gradient(rgba(28, 40, 90, 0.65), rgba(28, 40, 90, 0.65)), url(/assets/img/watkinsmilesridley.jpg);
-  background-image: linear-gradient(rgba(28, 40, 90, 0.65), rgba(28, 40, 90, 0.65)), url(/assets/img/watkinsmilesridley.jpg);
+  background-image: -webkit-linear-gradient(rgba(28, 40, 90, 0.65), rgba(28, 40, 90, 0.65)), url(/assets/img/watkinsridley.jpg);
+  background-image: linear-gradient(rgba(28, 40, 90, 0.65), rgba(28, 40, 90, 0.65)), url(/assets/img/watkinsridley.jpg);
   background-position: center; }
   @media screen and (min-width: 769px) {
     .hero-image.issues-image {
